@@ -10,6 +10,14 @@ const normalizeText = (texto) =>
     .toLowerCase()
     .trim();
 
+// Función para truncar texto y agregar "..." si es necesario
+const truncateText = (text, maxLength = 50) => {
+  if (text.length > maxLength) {
+    return text.substring(0, maxLength) + "...";
+  }
+  return text;
+};
+
 const TodoContext = createContext();
 
 function TodoProvider({ children }) {
@@ -53,7 +61,7 @@ function TodoProvider({ children }) {
       ? {
           type: "info",
           text: "No se encontraron resultados",
-          description: `Presiona "+" para agregar "${searchValue}" como nuevo To-Do`,
+          description: `Presiona "+" para agregar "${truncateText(searchValue)}" como nuevo To-Do`,
         }
       : null);
 
@@ -120,7 +128,7 @@ function TodoProvider({ children }) {
 
     setOpenModal({
       type: "question",
-      text: `¿Estás seguro de eliminar el To-Do: ${todo.text}?`,
+      text: `¿Estás seguro de eliminar el To-Do: ${truncateText(todo.text)}?`,
       confirmText: "Sí, eliminar",
       cancelText: "No, cancelar",
       onConfirm: () => {
