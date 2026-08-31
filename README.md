@@ -31,19 +31,15 @@ Una aplicación simple de lista de tareas construida con **React** y **Vite**, d
 
 ```
 src/
-├── assets/                     # Imágenes e íconos estáticos
-│   ├── hero.png
-│   ├── react.svg
-│   └── vite.svg
 ├── components/
 │   ├── CreateTodoButton/       # Botón para abrir el modal de creación
 │   ├── Loading/                # Estado de carga
 │   ├── Modal/                  # Modal reutilizable
 │   ├── TodoCounter/            # Contador de tareas pendientes
-│   ├── TodoFeedback/           # Mensajes de estado (sin tareas, sin resultados, etc.)
+│   ├── TodoFeedback/           # Mensajes de estado (sin resultados, campo vacio,  etc.)
 │   ├── TodoItem/               # Ítem individual de tarea
-│   ├── TodoList/                # Lista de tareas
-│   └── TodoSearch/              # Barra de búsqueda
+│   ├── TodoList/               # Lista de tareas
+│   └── TodoSearch/             # Barra de búsqueda
 ├── context/
 │   └── TodoContext/            # Contexto global con la lógica y estado de los todos
 ├── hooks/
@@ -80,7 +76,7 @@ Corre el servidor de desarrollo:
 npm run dev
 ```
 
-Abre [http://localhost:5173](http://localhost:5173) en tu navegador.
+Abre http://localhost:XXXX en tu navegador.
 
 ## Build de producción
 
