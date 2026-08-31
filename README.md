@@ -76,7 +76,7 @@ Corre el servidor de desarrollo:
 npm run dev
 ```
 
-Abre http://localhost:XXXX en tu navegador.
+Abre `http://localhost:XXXX` en tu navegador.
 
 ## Build de producción
 
