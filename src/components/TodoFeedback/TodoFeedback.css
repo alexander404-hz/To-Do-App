@@ -1,0 +1,30 @@
+.todo-info,
+.todo-error {
+  display: block;
+  list-style: none;
+  text-align: center;
+  padding: 18px 16px;
+  border-radius: 16px;
+  font-size: 0.96rem;
+}
+
+.todo-info {
+  background: rgba(139, 92, 246, 0.06);
+  border: 1px dashed rgba(139, 92, 246, 0.25);
+  color: #5b6473;
+}
+
+.todo-error {
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px dashed rgba(239, 68, 68, 0.35);
+  color: #991b1b;
+  font-weight: 600;
+}
+
+.todo-info small,
+.todo-error small {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  opacity: 0.84;
+}

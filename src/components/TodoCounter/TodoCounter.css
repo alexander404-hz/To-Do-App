@@ -1,0 +1,20 @@
+.todo-counter {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo-counter__label {
+  margin: 0 0 10px;
+  color: #7c3aed;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.todo-counter h1 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  margin: 0;
+  line-height: 1.2;
+  color: #1f2937;
+}
