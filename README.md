@@ -4,7 +4,7 @@ Una aplicación simple de lista de tareas construida con **React** y **Vite**, d
 
 🔗 **Demo en vivo:** [https://alexander404-hz.github.io/To-Do-App/](https://alexander404-hz.github.io/To-Do-App/)
 
-[![Preview de To-Do App](readme.webp)](https://alexander404-hz.github.io/To-Do-App/)
+[![Preview de To-Do App](public/readme.webp)](https://alexander404-hz.github.io/To-Do-App/)
 
 ---
 
