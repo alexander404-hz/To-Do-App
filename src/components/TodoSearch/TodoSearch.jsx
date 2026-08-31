@@ -8,10 +8,17 @@ function getSearchMessage(totalTodos) {
 }
 
 function TodoSearch() {
-  const { searchValue, handleChangeSearchValue, totalTodos } =
+  const { searchValue, handleChangeSearchValue, handleAddTodo, totalTodos } =
     useContext(TodoContext);
 
   const message = getSearchMessage(totalTodos);
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      handleAddTodo();
+    }
+  };
 
   return (
     <input
@@ -21,6 +28,7 @@ function TodoSearch() {
       aria-label={message}
       value={searchValue}
       onChange={handleChangeSearchValue}
+      onKeyDown={handleKeyDown}
     />
   );
 }
