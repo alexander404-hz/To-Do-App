@@ -53,7 +53,7 @@ function TodoProvider({ children }) {
       ? {
           type: "info",
           text: "No se encontraron resultados",
-          description: `Presiona "+" para agregar "${searchValue}" como nuevo TODO`,
+          description: `Presiona "+" para agregar "${searchValue}" como nuevo To-Do`,
         }
       : null);
 
@@ -83,8 +83,8 @@ function TodoProvider({ children }) {
     if (normalizeText(trimmedText) === "") {
       setFeedback({
         type: "error",
-        text: "El campo no puede estar vacio",
-        description: "Para poder agregar un TODO :)",
+        text: "El campo no puede estar vacio,",
+        description: "para poder agregar un To-Do :)",
       });
 
       return;
@@ -120,7 +120,7 @@ function TodoProvider({ children }) {
 
     setOpenModal({
       type: "question",
-      text: `¿Estás seguro de eliminar el TODO: ${todo.text}?`,
+      text: `¿Estás seguro de eliminar el To-Do: ${todo.text}?`,
       confirmText: "Sí, eliminar",
       cancelText: "No, cancelar",
       onConfirm: () => {

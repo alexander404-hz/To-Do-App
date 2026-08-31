@@ -3,8 +3,8 @@ import "./TodoSearch.css";
 import { TodoContext } from "../../context/TodoContext";
 
 function getSearchMessage(totalTodos) {
-  if (totalTodos === 0) return "¡Agrega tu primer TODO aqui!";
-  return "Buscar o agregar un TODO...";
+  if (totalTodos === 0) return "¡Agrega tu primer To-Do aqui!";
+  return "Buscar o agregar un To-Do...";
 }
 
 function TodoSearch() {
