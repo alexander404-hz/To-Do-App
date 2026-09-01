@@ -6,6 +6,7 @@
   padding: 18px 16px;
   border-radius: 16px;
   font-size: 0.96rem;
+  animation: feedback-in 0.35s ease-out;
 }
 
 .todo-info {
@@ -27,4 +28,15 @@
   margin-top: 6px;
   font-size: 0.8rem;
   opacity: 0.84;
+}
+
+@keyframes feedback-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

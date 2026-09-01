@@ -10,6 +10,7 @@
   letter-spacing: 0.12em;
   font-size: 0.72rem;
   font-weight: 700;
+  animation: label-fade-in 0.4s ease-out;
 }
 
 .todo-counter h1 {
@@ -17,4 +18,25 @@
   margin: 0;
   line-height: 1.2;
   color: #1f2937;
+  animation: title-fade-in 0.5s ease-out;
+}
+
+@keyframes label-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes title-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
